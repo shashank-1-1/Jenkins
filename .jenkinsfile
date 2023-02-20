@@ -6,9 +6,9 @@ pipeline {
                 // Get some code from a GitHub repository
                 git url: 'https://github.com/shashank-1-1/Jenkins.git', branch: 'main'
                 // Change file permisson
-                sh "chmod +x -R ./jenkins"
+                sh "chmod +x -R ./.jenkinsfile"
                 // Run shell script
-                sh "./jenkins/script/scripted_pipeline_ex_2.sh"
+                sh "./.jenkinsfile/script/scripted_pipeline_ex_2.sh"
             }
         }
     }
